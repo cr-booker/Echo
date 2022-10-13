@@ -13,8 +13,6 @@ body{
     color: white;
 }
 
-
-
 /*============*/
 /* Utilities */
 /*===========*/
@@ -97,7 +95,6 @@ body{
 .yellow-btn-glow{
     background: #FFD700;
     box-shadow: 0px 0px 80px #FFD700;
- 
 }
 
 /* Game state & rules */
