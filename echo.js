@@ -1,6 +1,6 @@
 "use strict"
 
-const Simon = (function(){
+const colorEcho = (function(){
     const colorSequence = [];
     let sequenceIndex = 0;
     const startBtn = document.getElementById("start-btn");
@@ -131,4 +131,4 @@ const Simon = (function(){
     return game
 })();
 
-window.addEventListener("DOMContentLoaded", Simon.initialize, false);
+window.addEventListener("DOMContentLoaded", colorEcho.initialize, false);
