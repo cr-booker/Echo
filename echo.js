@@ -3,11 +3,10 @@
 const colorEcho = (function(){
     const colorSequence = [];
     let sequenceIndex = 0;
-    const startBtn = document.getElementById("start-btn");
     const gameStateMessage = document.getElementsByClassName("game-state-message")[0];
 
     function disableBtns(disabled){ 
-        const gameContainer = document.getElementsByClassName("game-container")[0];
+        const gameContainer = document.getElementsByClassName("game-btn-container")[0];
         if (disabled){gameContainer.classList.add("disabled");}
 
         else if (!disabled){gameContainer.classList.remove("disabled");}
@@ -77,6 +76,7 @@ const colorEcho = (function(){
     }
     
     function cleanUp(){
+        const startBtn = document.getElementById("start-btn");
         disableBtns(true);
         setHighScore();
         setCurrentScore(true);
@@ -87,16 +87,15 @@ const colorEcho = (function(){
         colorSequence.length = 0;
     }
     
-    function startGame(e){
-        const startBtn = document.getElementById("start-btn");
-        startBtn.classList.toggle("hidden");
-        playRound();
-    }
-    
     function initialize(){
         loadHighScore();
 
-        startBtn.addEventListener("click", startGame);
+        const startBtn = document.getElementById("start-btn");
+        startBtn.addEventListener("click",e => {
+            startBtn.classList.toggle("hidden");
+            playRound();
+        });
+
         const gameBtns = document.querySelectorAll(".game-btn");
         gameBtns.forEach(btn =>{
             btn.addEventListener("click", e => { 
