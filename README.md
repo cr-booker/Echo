@@ -7,11 +7,11 @@ A clone of the classic board game Simon, Echo, is a sequence matching memory gam
 some boredom when you just need some simple mindless entertainment.
 
 
-## Ok cool, How do get this running?
+## Ok cool, How do I get this running?
 
 Download the files, extract to your preferred directory, and open the index.html with your favorite browser.
 
-## Gotcha, How do i play? what are the rules? 
+## Gotcha, How do I play? what are the rules? 
 
 ![Demo](screenshots/Echo-demo.gif)
 Good question. 
