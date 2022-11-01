@@ -6,9 +6,12 @@
 A clone of the classic board game Simon&trade;, Echo, is a sequence matching memory game thats sure to kill some boredom when you just need some simple 
 mindless entertainment.  
 
+
 ## Ok cool, how do I get this running?
 
-Download the files, extract to your preferred directory, and open the index.html  
+You can click [here]( https://syst3m-failur3.github.io/Echo/) to play.  
+
+Alternatively, download the files, extract to your preferred directory, and open the index.html  
 with your favorite browser.
 
 ## Gotcha. How do I play? What are the rules? 
